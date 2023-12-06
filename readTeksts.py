@@ -1,0 +1,10 @@
+# f = open("teksts.txt", "w")
+# f.write("Ralfs Kirsis")
+# f.close()
+# f = open("teksts.txt", "r")
+# print(f.read())
+
+g = open("mansteksts.txt", "r")
+g = open("mansteksts.txt", "w")
+g.write("xd lol")
+print(g.read())
