@@ -2,6 +2,11 @@
 <html>
   <body>
     <header>
+      <style>
+        body {
+          background-color: rgb(237, 250, 255);
+        }
+        </style>
       <div class="container"> <!-- Laiks kas rādās labajā augšā -->
         <h3 id="clock" style="float: right;">Tagadējais laiks 
         <p id="clock" style="float: right;"> Here will be date|time</p>
@@ -16,18 +21,18 @@
                     });
                 }, 1000);
         </script>
-        <h1 class="logo">Mana mājas lapa priekš Projekta darba</h1>
-        <h3>Uzpiežat, lai varētu pārlekt uz valsti, par kuru varēsiet uzzināt vairāk.</h3>
+        <h1 class="logo"> Mana mājas lapa priekš Projekta darba</h1>
+        <h3>Uzpiežat, lai varētu pārlekt uz valsti, par kuru varēsiet uzzināt vairāk. ↓↓↓</h3>
         <strong><nav>
-          <ul class="menu"> <!-- Izvēle, uz ko var ērti uzpiest -->
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('borabora') }}">Bora Bora</a></li>
-            <li><a href="{{ url_for('maui') }}">Maui</a></li>
-            <li><a href="{{ url_for('kreta') }}">Krēta</a></li>
-            <li><a href="{{ url_for('kapri') }}">Kapri</a></li>
-            <li><a href="{{ url_for('palavana') }}">Palavana</a></li>
-            <li><a href="{{ url_for('fernando') }}">Fernando de Noronha</a></li>
-            <li><a href="{{ url_for('bali') }}">Bali</a></li>
+          <ul class="menu"></ul>> <!-- Izvēle, uz ko var ērti uzpiest -->
+            <li><a href="{{ url_for('home') }}">Home ←</a></li>
+            <li><a href="{{ url_for('borabora') }}">Bora Bora ←</a></li>
+            <li><a href="{{ url_for('maui') }}">Maui ←</a></li>
+            <li><a href="{{ url_for('kreta') }}">Krēta ←</a></li>
+            <li><a href="{{ url_for('kapri') }}">Kapri ←</a></li>
+            <li><a href="{{ url_for('palavana') }}">Palavana ←</a></li>
+            <li><a href="{{ url_for('fernando') }}">Fernando de Noronha ←</a></li>
+            <li><a href="{{ url_for('bali') }}">Bali ←</a></li>
           </ul>
         </nav></strong>
       </div>
