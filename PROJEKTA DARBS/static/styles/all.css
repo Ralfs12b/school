@@ -16,9 +16,29 @@ div {
 
 p{
     font-size: larger;
+
 }
 
 nav{
     font-size: 150%;
 }
 
+#demo {
+    position: absolute;
+    left:0;
+}
+
+h4 {
+    position: absolute;
+    left:0;
+}
+h6.coordse {
+    position: absolute;
+    left:0;
+    visibility: hidden;
+}
+
+Button {
+    position: absolute;
+    left:0;
+}

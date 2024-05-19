@@ -2,6 +2,8 @@ from flask import Flask, Response, render_template
 from flask_socketio import SocketIO, emit
 from datetime import datetime
 import time
+import requests
+import html 
 # importi
 
 app = Flask(__name__, static_url_path="/static") # static lai varētu ielikt bildes html un styles css

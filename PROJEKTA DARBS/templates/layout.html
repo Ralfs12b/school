@@ -6,6 +6,31 @@
       <div class="container"> <!-- Laiks kas rādās labajā augšā -->
         <h3 id="clock" style="float: right;">Tagadējais laiks 
         <p id="clock" style="float: right;"> Here will be date|time</p>
+        
+
+<h6 class="Coordse">Uzpiežat šei lai zinātu savas koordinātes</h6>
+
+<button onclick="getLocation()">Uzzināt savas koordinātes</button>
+
+<h6 id="demo"></h6>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+  
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation nevar būt izmantojams šajā interneta programmā.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
       </h3>
         <script>
             var clock = document.getElementById("clock");
